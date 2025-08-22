@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hwang's">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons 넣는 방법 -->
+     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+     <link rel="apple-touch-icon" href="./images/apple-icon-png">
+
+
+     <!-- CSS START -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">  
+    <!-- 내가 컨트롤할 css가 우선 적용위해 맨 밑에 놔둠 -->
+
+    <!-- CSS END -->
+    <title>Hwang's potfolio</title>
+</head>
+
+<body>
+    
+    <!-- class="sticky-top" : 상단 메뉴바 스크롤시 고정 -->
+    <header id="header" class="sticky-top">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <!-- <a href="#"><img src="./images/4.jpg" alt=""></a> 이미지 넣을수 있음 -->
+                <a href="index.html" class="navbar-brand hwang-font">Hwang</a>
+
+                <!-- 햄버거 버턴 만들기
+                     1. 화면이 크지면 햄버거 버턴 없어짐
+                     2. toggle 기능 삽입 -->
+                <button type="button" class="navbar-toggler" 
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false">
+                <!-- aria-expanded="false" : 메뉴가 펼쳐져 있는 상태이지만 false 닫혀진 상태가 기본
+                     aria-controls="navbarNav" : navbarNav 를 컨트롤하라는 의미
+                     data-bs-target="#navbarNav" : id가 navbarNav인것이 타겟이다. 
+                 --> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- 햄버거 버턴내 메뉴 만들기 -->
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- 네비게이션 바에 마진을 중앙정렬로 하고 마진 바텀을 2, 크기는 lg를 0으로 -->
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">About</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#portfolio" class="nav-link dropdown-toggle" 
+                            data-bs-toggle="dropdown" role="button" id="navbarDropdown" 
+                            aria-expanded="false">portfolio</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html#portfolio">디자인</a></li>
+                                <li><a class="dropdown-item" href="">영상</a></li>
+                                <li><a class="dropdown-item " href="">피그마</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://www.daum.net" 
+                                target="_blank">WEB</a></li>
+                            </ul>
+                             
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="검색하세요">
+                        <button type="submit" class="btn btn-outline-success">search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+    </main>
+
+    <footer class="footer text-center py-3 bg-dark">
+        <div class="container">
+            <a href="#" style="text-decoration: none;"><span class="text-white">
+            Copyright 2025년 Hwnag won chul </span></a>
+            <!-- style="text-decoration: none : 밑줄 제거 -->
+        </div>
+    </footer>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- 내가 컨트롤할 js가 우선 적용위해 맨 밑에 놔둠 -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

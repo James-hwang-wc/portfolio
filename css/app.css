@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+.hwang-font {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.modal-dialog {
+  max-width: 80%;
+}
+
+/* 이미지에 커서 올렸을때 손모양 나타나게 함 */
+.portfolio-item {
+  cursor: pointer;
+  margin-bottom: 1.8rem;
+}
